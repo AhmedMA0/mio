@@ -26,19 +26,30 @@
 
         else {
             $nums .= strval($num);
+        
+
+            $a=explode("?",$nums);
+
+            unset($a[0]);
+
+            $a= array_map('intval',$a);
+
+                
+            foreach ($a as $b) {
+                
+                if (max($a)==$b) {
+                    echo 'MAX=',$b, ', ';
+                }
+
+                else if (min($a)==$b) {
+                    echo 'MIN=',$b, ', ';
+                }
+
+                else {
+                    echo $b, ', ';
+                }
+            }
         }
-
-        $a=explode("?",$nums);
-
-        unset($a[0]);
-
-        $a= array_map('intval',$a);
-
-        foreach ($a as $b) {
-            echo $b, ', ';
-        }
-
-
     ?>
 </body>
 </html>
