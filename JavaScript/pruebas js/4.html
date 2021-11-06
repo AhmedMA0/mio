@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse; /*borde de la tabla */width: 100%;
+        }
+
+        td {
+            border: 4px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="text"></p>
+    <script>
+        let name = prompt("Introduzca su nombre y apellidos: ");
+        let dir = prompt("Introduzca su dirección: ");
+        let tlf = prompt("Introduzca su teléfono: ");
+        let dni = prompt("Introduzca su dni: ");
+
+        alert("Nombre: " + name + " " + "Direccion: " + dir + " " + "Teléfono: " + tlf + " " + "Documento de identidad: " + dni);
+        document.writeln("Nombre: " + name + " " + "Direccion: " + dir + " " + "Teléfono: " + tlf + " " + "Documento de identidad: " + dni);
+        document.getElementById("text").innerHTML = ("Nombre: " + name + " " + "Direccion: " + dir + " " + "Teléfono: " + tlf + " " + "Documento de identidad: " + dni);
+        console.log("Nombre: " + name + " " + "Direccion: " + dir + " " + "Teléfono: " + tlf + " " + "Documento de identidad: " + dni);
+    </script>
+</body>
+</html>

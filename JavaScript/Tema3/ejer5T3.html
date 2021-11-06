@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <title>Doc.</title>
+</head>
+<body>
+    <p id="text"></p>
+    <script>
+
+        //creamos el array con los meses del año
+        let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        
+        //sacamos por una alerta el array
+        alert(meses);
+
+        //bucle que recorre todo el array posicion a posicion hasta el final
+        for (let i = 0; i < meses.length; i++) {
+            
+            //sacamos el dia de la semana sin coma
+            document.write(meses[i]);
+
+            //comprobamos que el bucle esta en la ultima iteración, si es asi se salta la ultima linea de codigo del bucle
+            if(i==(meses.length-1)){
+                continue;
+            }
+
+            //sacamos la coma despues del dia
+            document.writeln(',');
+        }
+    </script>
+</body>
+</html>

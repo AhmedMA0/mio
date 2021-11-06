@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+    <!-- Mi primera página HTML -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="witdh=device,initial-scale=1.0">
+        <meta name="lang" content="es-ES">
+        <meta name="author" content="Emilio">
+        <meta name="keywords" content="computers,programming,web design,html,html,html5">
+        <meta name="description" content="Mi primera página web, para recordar mis conocimientos de HTML">
+        <title>Mi primera página HTML</title>
+        <link rel="stylesheet" href="./estilos.css">
+        <link rel="icon" type="image/png" href="./icon.png">
+        <base href="./Descargas">
+    </head>
+    <body>
+        <h1>
+            El patriarca de los vulcanólogos se reencuentra con su leviatán
+        </h1>
+
+        <nav>
+
+        <p id="pp1">
+            <ul>
+                <li><a href="#accidentes">Accidentes Laborales</a></li>
+                <li><a href="#imagen">Imagen</a></li>
+                <li><a href="#perlas">Perlas</a></li>
+            </ul>
+        </p>
+
+        </nav>
+        <section>
+
+        <p class="primerparrafo">
+        “¡Por allí resopla!”, exclama el octogenario vulcanólogo Juan Carlos Carracedo al contemplar en el horizonte la columna de cenizas del nuevo volcán de <a href="https://www.grancanaria.com/turismo/es/la-isla/isla-de-gran-canaria/" target="_blank" type="text/html" rel="external">La Palma</a>.
+        </p>
+        <p class="seccion1">
+        Es el mismo grito de guerra que profería el legendario capitán Ahab al avistar el chorro de Moby Dick, en su obsesiva persecución por los océanos.
+        </p>
+        </section>
+        <img src="./room.jpg" alt="Habitación" title="Salón de Las Perlitas" usemap="#mi_mapa">
+        <br>
+        <br>
+        <h2>
+        <mark>El leviatán de Carracedo es Cumbre Vieja, una monumental cordillera llena de puertas al infierno que se han ido abriendo una tras otra en los últimos milenios.</mark>
+        </h2>
+        <section>
+        <p class="primerparrafo" id="accidentes">
+        Al igual que <span> Moby Dick </span> arrancó de cuajo la pierna del capitán ballenero, <strong>Cumbre Vieja</strong> casi siega la vida del <em>vulcanólogo</em>.
+        </p>
+        <p id="findetexto">
+        “Hace 50 años estuvimos a punto de morir aquí”, recuerda el investigador, erguido sobre la que pudo ser su tumba de lava.
+        </p>
+        </section>
+        <p>
+            X<sup>4</sup> = 16
+            <br>
+            X<sub>0</sub> = +2
+            <br>
+            X<sub>1</sub> = -2
+            <br>
+            Me encanta el <abbr title="Instituto de Enseñanza Secundaria">IES</abbr>"Perla del Mediterráneo"
+        </p>
+
+        <map name="mi_mapa">
+            <area shape="rect" coords="458,126,556,245" alt="rectángulo" title="Cuadro" href="http://www.google.es"  target="_blank">
+            <area shape="circle" coords="799,246,60" alt="círculo" title="Espejo" href="http://www.google.es"  target="_blank">
+            <area shape="poly" coords="116,372,268,337,387,339,392,448,313,551,113,549" alt="círculo" title="Espejo" href="http://www.google.es"  target="_blank">
+        </map>
+        <figure id="imagen">
+            <picture>
+                <source media="(min-width:1200px)" srcset="./TierraGrande.jpg">
+                <source media="(min-width:800px)" srcset="./TierraMediana.jpg">
+                <img src="./TierraPequena.jpg">
+            </picture>
+            <figcaption>La Tierra desde el Espacio</figcaption>
+        </figure>
+
+        <ul>
+            <li>Lista sin ordenar 1</li>
+            <ol type="1" reversed start="27">
+                <li>Lista ordenada 1</li>
+                <li>Lista ordenada 2</li>
+                <li>Lista ordenada 3</li>
+                <li>Lista ordenada 4</li>
+            </ol>
+            <li>Lista sin ordenar 2</li>
+            <li>Lista sin ordenar 3</li>
+            <li>Lista sin ordenar 4</li>
+            <li>Lista sin ordenar 5</li>
+        </ul>
+        <dt id="perlas">Perlas Mediterráneas</dt>
+        <dd>El alumnado de Segundo curso del ciclo superior de Desarrollo de Aplicaciones Web del antiguo IES "Puertas del Campo" de Ceuta.</dd>
+
+        <br>
+
+        <dt>Módulos</dt>
+        <dd>
+            <ul>
+                <li>DWEC</li>
+                <li>DWES</li>
+                <li>DIW</li>
+                <li>DAW</li>
+                <li>EIE</li>
+            </ul>
+        </dd>
+
+        <br>
+
+        <details>
+            <summary><bdo dir="rtl">Elemento Desplegable: Módulos</bdo></summary>
+            <ul>
+                <li>DWEC</li>
+                <li>DWES</li>
+                <li><del>DIW</del></li>
+                <li>DAW</li>
+                <li>EIE</li>
+            </ul>
+        </details>
+
+        <br>
+        <hr>
+        <blockquote>
+            Elemento 1
+        </blockquote>
+        <blockquote>
+            Elemento 2
+        </blockquote>
+        <blockquote>
+            Elemento 3
+        </blockquote>
+        <hr>
+        <br>
+
+        <table border="1">
+            <th colspan="2">Encabezado</th>
+            <tr>
+                <td>Fila 1 Columna 1</td>
+                <td>Fila 1 Columna 2</td>
+            </tr>
+            <tr>
+                <td>Fila 2 Columna 1</td>
+                <td>Fila 2 Columna 2</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table border="1" >
+            <tr>
+                <td colspan="3">A</td>
+            </tr>
+            <tr>
+                <td rowspan="3">B</td>
+                <td colspan="2">C</td>
+            </tr>
+            <tr>
+                <td colspan="2">D</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            
+        </table>
+
+        <br>
+
+        <table border="1">
+            <tr>
+                <td colspan="6">HORARIO</td>
+            </tr>
+            <tr>
+                <td>Día</td>
+                <td>L</td>
+                <td>M</td>
+                <td>X</td>
+                <td>J</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="2">DAW</td>
+                <td rowspan="2" colspan="2">DWES</td>
+                <td>EIE</td>
+                <td rowspan="2">DWES</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td rowspan="2">DWEC</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td rowspan="2">DWEC</td>
+                <td rowspan="2">DIW</td>
+                <td>EIE</td>
+                <td rowspan="2">DIW</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td rowspan="2">DAW</td>
+                <td rowspan="2">DIW</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td rowspan="2">DWES</td>
+                <td rowspan="2">DWEC</td>
+                <td>EIE</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>DIW</td>
+                <td>DAW</td>
+                <td>DIW</td>
+            </tr>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- Formularios en HTML (mirarlo en el otro archivo .html)-->
+        <form>
+            <fieldset>
+                <legend>Holi</legend>
+                <label for="nombre">Etiqueta</label>
+                <input name="nombre" id="nombre" type="button" value="Holi">
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es-es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            document.write("<style>html, body{height: 100%;width: 100%;} div{height: 50px;width: 50px;}</style>");
+            
+            for (let i = 0; i < 2000; i++) {
+            
+            document.write('<div style="position: fixed; background-color: rgb('+Math.random() * 255+','+Math.random() * 255+','+Math.random() * 255+'); top: '+Math.random() * 100+'%; left: '+Math.random() * 100+'%;">ㅤ</div>');
+            }
+        </script>
+    </body>
+</html> 

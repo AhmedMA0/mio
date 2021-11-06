@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Document html">
+    <meta name="author" content="Ahmed R.">
+    <meta name="keywords" content="computers,programing,web design,html,html5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="lang" content="es-ES">
+    <title>Document</title>
+</head>
+<body>
+    <main id="contenido">
+        <form name="miformulario" method="post" action="form.php">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" size="15" maxlength="15" required>
+                </p>
+                <p>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos" size="40" maxlength="40">
+                </p>
+                <p>
+                    <label for="fecnac">Fecha Nacimiento:</label>
+                    <input type="date" name="fecnac" id="fecnac" value="2021-01-01">
+                </p>
+                <p>
+                    <label for="tlf">Telefono:</label>
+                    <input type="tel" name="tlf" id="tlf" size="40" readonly value="6565656565">
+                </p>
+                <fieldset>
+                    <legend>Genero</legend>
+                    <p>
+                        <label for="genero">Mujer</label>
+                        <input type="radio" name="genero" id="mujer" value="M">
+                    </p>
+                    <p>
+                        <label for="genero">Hombre</label>
+                        <input type="radio" name="genero" id="hombre" value="H">
+                    </p>
+                    <p>
+                        <label for="genero">Otro</label>
+                        <input type="radio" name="genero" id="otro" value="O" checked>
+                    </p>
+                    <p>
+                        <label for="correo">Correo</label>
+                        <input type="email" name="correo" id="correo" size="40" disabled value="correo@correo.xxx">
+                    </p>
+                    <p>
+                        <label for="web">Pagina Web Personal</label>
+                        <input type="url" name="web" id="web" size="50" required placeholder="Introduzca una pagina web valida incluyendo http">
+                    </p>
+                    <p>
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" name="pass" id="pass" size="20" autofocus>
+                    </p>
+                    <p>
+                        <label for="matricula">Matricula:</label>
+                        <input type="text" name="matricula" id="matricula" size="8" maxlength="8" pattern="">
+                    </p>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="numfav">Mi numero PAR favorito es:</label>
+                    <input type="number" name="numfav" id="numfav" size="5" min="0" max="100" step="2" value="4">
+                </p>
+                <fieldset>
+                    <legend>Intereses personales:</legend>
+                    <p>
+                        <label for="deporte">Deporte</label>
+                        <input type="checkbox" name="deporte" id="deporte" value="deporte" checked>
+                    </p>    
+                    <p>
+                        <label for="vid">VideoJuegos</label>
+                        <input type="checkbox" name="vid" id="vid" value="vid" checked>
+                    </p> 
+                    <p>
+                        <label for="cine">Cine</label>
+                        <input type="checkbox" name="cine" id="cine" value="cine" checked>
+                    </p> 
+                    <p>
+                        <label for="lec">Lectura</label>
+                        <input type="checkbox" name="lec" id="lec" value="lec">
+                    </p> 
+                </fieldset>
+                <p>
+                    <label for="turno">Turno de trabajo</label>
+                    <select name="turno" id="turno">
+                        <option value="M">Turno de Mañana</option>
+                        <option value="T" selected>Turno de Tarde</option>
+                        <option value="N">Turno de Noche</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="ciudad">Ciudades de procedencia</label>
+                    <select name="ciudad" id="ciudad">
+                        <optgroup label="Andalucia">
+                            <option value="M">Malaga</option>
+                            <option value="C"selected>Cadiz</option>
+                            <option value="S">Sevilla</option>
+                        </optgroup>
+                        <optgroup label="Galicia">
+                            <option value="O">Orense</option>
+                            <option value="P">Pontevedra</option>
+                            <option value="L">Lugo</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="marcas">Marca de telefono movil</label>
+                    <input type="text" list="marcaslist">
+                    <datalist id="marcaslist" name="marcas">
+                        <option value="Apple" spellcheck="false">Apple</option>
+                        <option value="Samsung" spellcheck="false">Samsung</option>
+                        <option value="Xiaomi" spellcheck="false">Xiaomi</option>
+                        <option value="Motorola" spellcheck="false">Motorola</option>
+
+                    </datalist>
+                </p>
+                <p>
+                    <label for="colores">Mi color favorito es: </label>
+                    <input type="color" name="colores" id="colores" value="#FF6688">
+                </p>
+                <P>
+                    <label for="escala">Mi nivel de satisfaccion con la asignatura es: </label>
+                    <input type="range" name="escala" id="escala" min="0" max="100" value="80">
+                </P>
+                <p>
+                    <label for="archivo">SUbe un archivo desde aqui:</label>
+                    <input type="file" name="archivo">
+                </p>
+                <p>
+                    <label for="comentario">
+                            Introduzca comentario.
+                    </label>
+                    <textarea id="comentario" name="comentario" rows="5" cols="40" spellcheck="true"></textarea>
+                </p>
+                <p>
+                    <input type="reset" value="Borrar">
+                    <input type="submit" value="Enviar">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

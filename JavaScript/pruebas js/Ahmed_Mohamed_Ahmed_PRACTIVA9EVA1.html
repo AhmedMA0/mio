@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = prompt("Introduzca su nombre y apellidos: ");
+        let sal = parseFloat(prompt("Introduzca su salario: "));
+        let age = prompt("Introduzca su edad: ");
+
+        if (sal > 2000) {     
+        }
+
+        else if (sal > 1000 && sal < 2000) {
+
+            if (age > 45) {
+
+                sal += (sal * 3)/100;
+            }
+            else{ 
+
+                sal += (sal * 10)/100;
+            }
+        }
+
+        else{
+
+            if (age < 30) {
+
+                sal = 1100;
+            }
+            else if (age >= 30 && age <= 45) {
+
+                sal += (sal * 3)/100;
+            }
+            else{
+
+                sal += (sal*15)/100;
+            }
+        }    
+
+        document.writeln("Nombre: " + name + ". " + "Edad: " + age + ". " + "Salario recalculado: " + sal + ". ");
+    </script>
+</body>
+</html>
