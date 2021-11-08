@@ -13,7 +13,7 @@
 
         
 
-        if (!isset($num)||$count<10) {
+        if (!isset($num)||$count<8) {
             
             $count++;
             echo '<form action="#" method="POST">
@@ -35,19 +35,15 @@
             unset($nums2[0]);
 
             $nums2= array_map('intval',$nums2);
-            
+     
             foreach ($nums2 as $b) {
                 
-                if (max($nums2)==$b) {
-                    echo 'MAX=',$b, ', ';
-                }
-
-                else if (min($nums2)==$b) {
-                    echo 'MIN=',$b, ', ';
+                if ($b%2==0) {
+                    echo '<span style="color:red;">',$b,', ','</span>';
                 }
 
                 else {
-                    echo $b, ', ';
+                    echo '<span style="color:blue;">',$b,', ','</span>';
                 }
             }
         }

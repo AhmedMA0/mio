@@ -13,7 +13,7 @@
 
         
 
-        if (!isset($num)||$count<10) {
+        if (!isset($num)||$count<15) {
             
             $count++;
             echo '<form action="#" method="POST">
@@ -27,7 +27,7 @@
 
         }
 
-        else {        
+        else {
             $nums .= strval($num);
 
             $nums2=explode("?",$nums);
@@ -35,21 +35,19 @@
             unset($nums2[0]);
 
             $nums2= array_map('intval',$nums2);
+
+            $aux=$nums2[15];
             
-            foreach ($nums2 as $b) {
-                
-                if (max($nums2)==$b) {
-                    echo 'MAX=',$b, ', ';
-                }
-
-                else if (min($nums2)==$b) {
-                    echo 'MIN=',$b, ', ';
-                }
-
-                else {
-                    echo $b, ', ';
-                }
+            //el array va del 1 al c porque le quito la primera antes
+            for ($i=15, $j=14; $i > 1; $j--,$i--) { 
+                $nums2[$i]=$nums2[$j];
             }
+
+            $nums2[1]=$aux;
+                 
+            foreach ($nums2 as $b) {
+                echo $b, ', ';
+            }        
         }
     ?>
 </body>
